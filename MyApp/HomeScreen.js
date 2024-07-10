@@ -173,9 +173,16 @@ export default function HomeScreen() {
      >
          <View style={styles.modalView}>
              <TouchableOpacity onPress={toggleMenu}>
-             <Icon style={{ bottom: 30, right:120 }} name="times" size={25} color="black" />
+             <Icon style={{ bottom: 30, right:15 }} name="times" size={25} color="black" />
              </TouchableOpacity>
-                <Text style={{fontSize: 42, fontWeight: '300', top: -15,right:75}}>Eric Atsu</Text>
+                <Text style={{fontSize: 42, fontWeight: '300', top: -15,right:20}}>Eric Atsu</Text>
+                <View style={{borderTopWidth: 2, width: 110,right: 10, bottom: 10, borderColor: 'orange'}}/>
+                <Text style={styles.drawerlist}>Store</Text>
+                <Text style={styles.drawerlist}>Locations</Text>
+                <Text style={styles.drawerlist}>Blog</Text>
+                <Text style={styles.drawerlist}>Jewelery</Text>
+                <Text style={styles.drawerlist}>Electronic</Text>
+                <Text style={styles.drawerlist}>Clothing</Text>
          </View>
      </Modal>
      </>
@@ -276,7 +283,7 @@ const styles = StyleSheet.create({
         backgroundColor: "white",
         borderRadius: 20,
         padding: 35,
-        alignItems: "center",
+        alignContent: 'center',
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
@@ -284,6 +291,13 @@ const styles = StyleSheet.create({
         },
         height: '100%',
         width: 300,
+    },
+    drawerlist: {
+        fontSize: 30,
+        fontWeight: '300',
+        top: 20,
+        right: 20,
+        marginBottom: 40,
     },
 
 });
