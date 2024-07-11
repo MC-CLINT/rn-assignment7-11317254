@@ -150,6 +150,7 @@ export default function HomeScreen() {
 </View>
 {!isListVisible && (<View style={styles.itemsContainer}>
                 {sampleItems.map(item => (
+                    <TouchableOpacity key={item.id} onPress={() => navigation.navigate('ProductDetails', { item: item })}>
                     <View key={item.id} style={styles.item}>
                         <Image style={{ height: 230, width: 170, marginTop:30, }} source={{ uri: item.image }} />
                         <TouchableOpacity onPress={() => addToCart(item)}>
@@ -161,6 +162,7 @@ export default function HomeScreen() {
                         <Text style={{ fontSize: 15, bottom:25, width: 150 }}>{shortenDescription(item.description)}</Text>
                         <Text style={{ fontSize: 30, color: 'orange', bottom:25 }}>${item.price}</Text>
                     </View> 
+                    </TouchableOpacity>
                 ))}
             </View>
             )}
