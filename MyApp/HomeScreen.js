@@ -55,64 +55,7 @@ export default function HomeScreen() {
         return description;
     };
     
-    /*const sampleItems = [
-        {
-            id: 1,
-            name: 'Office Wear',
-            description: 'Office Wear for your office',
-            price: 120,
-            image: require('./assets/dress1.png'),
-        },
-        {
-            id: 2,
-            name: 'Black',
-            description: 'reversible angora cardigan',
-            price: 120,
-            image: require('./assets/dress2.png'),
-        },
-        {
-            id: 3,
-            name: 'Church Wear',
-            description: 'recycle boucle knit cardigan pink',
-            price: 120,
-            image: require('./assets/dress3.png'),
-        },
-        {
-            id: 4,
-            name: 'Lamerei',
-            description: 'recycle boucle knit cardigan pink',
-            price: 120,
-            image: require('./assets/dress4.png'),
-        },
-        {
-            id: 5,
-            name: '21WN',
-            description: 'reversible angora cardigan',
-            price: 120,
-            image: require('./assets/dress5.png'),
-        },
-        {
-            id: 6,
-            name: 'Lopo',
-            description: 'reversible angora cardigan',
-            price: 120,
-            image: require('./assets/dress6.png'),
-        },
-        {
-            id: 7,
-            name: '21WN',
-            description: 'reversible angora cardigan',
-            price: 120,
-            image: require('./assets/dress7.png'),
-        },
-        {
-            id: 8,
-            name: 'Lame',
-            description: 'reversible angora cardigan',
-            price: 120,
-            image: require('./assets/dress3.png'),
-        },
-    ];*/
+    
     
     return (
        <>
@@ -138,11 +81,11 @@ export default function HomeScreen() {
 
 <View style={styles.HomeHead}>
     <Text style={{fontSize:30, letterSpacing: 8}}> OUR STORY</Text>
-    <TouchableOpacity onPress={toggleListVisibility}>
+   
     <View style={styles.ListViewCon}>
     <Icon style={{ top:8, opacity:0.7}} name="list" size={25} color="black"  />
     </View>
-    </TouchableOpacity>
+   
     
     <View style={styles.filterCon}>
         <Icon style={{top:8}} name="filter" size={25} color="orange"  />

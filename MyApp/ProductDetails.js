@@ -79,12 +79,19 @@ export default function ProductDetails() {
 
         
 <View style={{borderBottomWidth: 1, height: 100, color: 'black', bottom: 250, right: 195, opacity:0.15}}/>
-<View style={{bottom: 200, right: 175}}>
+<Image source={require('./assets/Shipping.png')} style={{ right:205, bottom:220 }}/>
+<Image source={require('./assets/Up.png')}  style={{ left: 100, bottom: 250}}/>
+<View style={{bottom: 285, right: 175}}>
 <Text style={{fontSize: 25}}> Free Flat Rate Shipping </Text>
-<Text style={{left: 3, fontSize: 18}}> Estimated to be delivered on</Text>
-<Text style={{left: 6, fontSize: 18}}>9/11/2021 - 12/11/2021</Text>
+<Text style={{left: 3, fontSize: 18, fontWeight:'300'}}> Estimated to be delivered on</Text>
+<Text style={{left: 6, fontSize: 18, fontWeight: '300'}}>9/11/2021 - 12/11/2021</Text>
 </View>
-        
+
+    <View style={styles.footer}>
+        <Icon name="plus" size={30} style={{color: 'white', bottom: -35}}/>
+    <Icon  name="heart" size={30} style={{color: 'white', left: 320, bottom: -5}} />
+            <Text style={{color: 'white', fontSize: 30, left: 70, bottom: 25}}>ADD TO BASKET</Text>
+    </View>    
 </View> 
 
 </View>
@@ -178,7 +185,7 @@ const styles = StyleSheet.create({
     image: {
         width: '100%',
         height: 400,
-        right: 195,
+        right: 210,
         top: 60,
         marginBottom: 10,
        
@@ -230,5 +237,13 @@ const styles = StyleSheet.create({
         top: -200,
         marginBottom: 5,
     },
+    footer:{
+        backgroundColor:'black',
+        width:380,
+        height: 80, 
+        right: 215,
+        top: 30,
+        justifyContent:'center'
+    }
 
 });
